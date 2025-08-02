@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AtechX - Hub d'Applications Web</title>
+    
+    <!-- Firebase -->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js';
+        import { getAnalytics } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js';
+        import { firebaseConfig } from './firebase-config.js';
+        
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 900px;
+            padding: 40px 20px;
+        }
+        
+        .logo {
+            font-size: 4rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 60px;
+            opacity: 0.9;
+        }
+        
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin: 60px 0;
+        }
+        
+        .app-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+        
+        .app-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+        
+        .app-icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+        
+        .app-title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .app-desc {
+            opacity: 0.8;
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+        
+        .app-card.friendlytcg {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.3), rgba(37, 99, 235, 0.3));
+        }
+        
+        .app-card.budget {
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.3), rgba(22, 163, 74, 0.3));
+        }
+        
+        .footer {
+            margin-top: 60px;
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 3rem;
+            }
+            
+            .subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .apps-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .app-card {
+                padding: 30px;
+            }
+            
+            .app-icon {
+                font-size: 3rem;
+            }
+            
+            .app-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">AtechX</div>
+        <div class="subtitle">Votre hub d'applications web</div>
+        
+        <div class="apps-grid">
+            <!-- FriendlyTCG App -->
+            <a href="https://friendlytcg-35fba.web.app/" target="_blank" class="app-card friendlytcg">
+                <div class="app-icon">🎮</div>
+                <div class="app-title">FriendlyTCG</div>
+                <div class="app-desc">
+                    Découvrez l'univers passionnant des jeux de cartes à collectionner. 
+                    Gérez votre collection, participez à des tournois et connectez-vous avec d'autres joueurs.
+                </div>
+            </a>
+            
+            <!-- Budget App -->
+            <a href="https://budget-app-pro.web.app/" target="_blank" class="app-card budget">
+                <div class="app-icon">💰</div>
+                <div class="app-title">Budget App Pro</div>
+                <div class="app-desc">
+                    Prenez le contrôle de vos finances avec notre application de gestion budgétaire intuitive. 
+                    Suivez vos dépenses, planifiez votre épargne et atteignez vos objectifs financiers.
+                </div>
+            </a>
+        </div>
+        
+        <div class="footer">
+            © 2025 AtechX - Développé avec ❤️ et propulsé par Firebase
+        </div>
+    </div>
+</body>
+</html>
