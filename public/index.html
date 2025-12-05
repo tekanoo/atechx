@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atechx</title>
+    <meta name="description" content="Atechx – Portail vers l'ensemble de mes projets web." />
+    <link rel="icon" type="image/jpeg" href="/favicon/favicon.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css?v=202411232205" />
+  </head>
+  <body>
+    <a class="btn primary top-contact" href="/contact">Me contacter</a>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Basculer le thème">
+      <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="12" cy="12" r="5" />
+        <line x1="12" y1="1" x2="12" y2="4" />
+        <line x1="12" y1="20" x2="12" y2="23" />
+        <line x1="4.22" y1="4.22" x2="6.34" y2="6.34" />
+        <line x1="17.66" y1="17.66" x2="19.78" y2="19.78" />
+        <line x1="1" y1="12" x2="4" y2="12" />
+        <line x1="20" y1="12" x2="23" y2="12" />
+        <line x1="4.22" y1="19.78" x2="6.34" y2="17.66" />
+        <line x1="17.66" y1="6.34" x2="19.78" y2="4.22" />
+      </svg>
+      <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M21 14.5A8.5 8.5 0 0 1 9.5 3a0.5 0.5 0 0 0-0.46 0.3 8.5 8.5 0 1 0 11.66 11.66 0.5 0.5 0 0 0 0.3-0.46z" />
+      </svg>
+    </button>
+    <header class="hero">
+      <div class="hero__content">
+        <p class="eyebrow">Atechx</p>
+        <h1>Assistance Informatique & Finance Personnelle</h1>
+        <p class="intro">
+          Assistance polyvalente : optimisation & entretien PC, mises en service, sécurité et bonnes pratiques (cybersécurité, sauvegardes), conseils matériel, ainsi que vulgarisation finance personnelle (fonctionnement du système financier, bourse, premiers investissements).
+        </p>
+        <!-- Bouton déplacé en haut à droite -->
+      </div>
+    </header>
+
+    <main>
+      <nav class="tabs" role="tablist" aria-label="Navigation principale">
+        <button class="tabs__button is-active" role="tab" aria-selected="true" aria-controls="tab-contact" id="tab-contact-btn" data-tab-target="tab-contact">
+          Expertises
+        </button>
+        <button class="tabs__button" role="tab" aria-selected="false" aria-controls="tab-profile" id="tab-profile-btn" data-tab-target="tab-profile">
+          Profil
+        </button>
+        <button class="tabs__button" role="tab" aria-selected="false" aria-controls="tab-projects" id="tab-projects-btn" data-tab-target="tab-projects">
+          Projets
+        </button>
+        <button class="tabs__button" role="tab" aria-selected="false" aria-controls="tab-support" id="tab-support-btn" data-tab-target="tab-support">
+          Tarifs
+        </button>
+      </nav>
+
+      <div class="tab-panels" id="tab-panels">
+      <section class="tab-section is-active" id="tab-contact" role="tabpanel" aria-labelledby="tab-contact-btn" aria-hidden="false">
+        <article class="contact-card">
+          <header>
+            <p class="card__eyebrow">Expertise</p>
+            <h2>Solutions & accompagnement</h2>
+            <p class="expertise-intro">
+              J'interviens sur la conception d'applications web simples (architecture front, intégration, déploiement) réalisées sur devis en fonction du périmètre.
+              J'apporte également un support technique sur la performance et la stabilité de votre poste (ralentissements, nettoyage, mises à jour), la sécurisation et l'hygiène numérique,
+              ainsi que la vulgarisation pratique de la finance personnelle pour comprendre le système financier et faire vos premiers pas sereins.
+            </p>
+          </header>
+          <ul>
+            <li>
+              <span>Mail direct</span>
+              <a href="mailto:contact@atechx.fr">contact@atechx.fr</a>
+            </li>
+          </ul>
+          <ul class="expertise-list">
+            <li>Installation outils & systèmes d'exploitation</li>
+            <li>Nettoyage & optimisation PC</li>
+            <li>Sécurisation postes de travail</li>
+            <li>Formation / sensibilisation cybersécurité</li>
+            <li>Conseil & montage PC</li>
+            <li>Conseil finance : actions, bourse, structure</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="tab-section" id="tab-profile" role="tabpanel" aria-labelledby="tab-profile-btn" aria-hidden="true">
+        <article class="profile-card">
+          <header>
+            <p class="card__eyebrow">Profil</p>
+            <h2>Parcours & formation</h2>
+            <p>
+              Solide double compétence : comptabilité & gestion pour structurer les décisions financières quotidiennes, et Master MSc Cyber & Management pour une approche sécurisée des environnements numériques. 5 années d'expérience en finance personnelle (budget, allocation, discipline d'investissement) et assistance informatique (performance, prévention des risques, bonnes pratiques).
+            </p>
+          </header>
+          <ul class="expertise-list">
+            <li>Formation en comptabilité & gestion</li>
+            <li>Master MSc Cyber & Management</li>
+            <li>5 ans d'expérience finance personnelle</li>
+            <li>Optimisation & sécurité postes de travail</li>
+            <li>Sensibilisation & hygiène cyber</li>
+            <li>Organisation digitale & matériel</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="tab-section projects" id="tab-projects" role="tabpanel" aria-labelledby="tab-projects-btn" aria-hidden="true">
+        <article class="card">
+          <div>
+            <p class="card__eyebrow">Application web</p>
+            <h2>Friendly TCG</h2>
+            <p>
+              Gestionnaire de cartes à collectionner pensé pour simplifier l'organisation d'une collection et le suivi des échanges entre joueurs passionnés.
+            </p>
+          </div>
+          <a class="btn tertiary" href="https://friendly-tcg.com/" target="_blank" rel="noreferrer">Visiter</a>
+        </article>
+
+        <article class="card">
+          <div>
+            <p class="card__eyebrow">Progressive Web App</p>
+            <h2>Budgway</h2>
+            <p>
+              Gestion budgétaire collaborative avec synchronisation en temps réel et alertes intelligentes pour garder le contrôle sur ses dépenses.
+            </p>
+          </div>
+          <a class="btn tertiary" href="https://budgway.com/" target="_blank" rel="noreferrer">Visiter</a>
+        </article>
+
+        <article class="card">
+          <div>
+            <p class="card__eyebrow">Landing page</p>
+            <h2>Sycoins</h2>
+            <p>
+              Présentation claire d'une plateforme crypto-éducative avec un focus sur la pédagogie et la simplicité d'onboarding.
+            </p>
+          </div>
+          <a class="btn tertiary" href="https://sycoins.com/" target="_blank" rel="noreferrer">Visiter</a>
+        </article>
+      </section>
+
+
+      <section class="tab-section" id="tab-support" role="tabpanel" aria-labelledby="tab-support-btn" aria-hidden="true">
+        <div class="tarif-filters" role="group" aria-label="Filtrer les services">
+          <button type="button" class="filter-btn is-active" data-filter="all" aria-pressed="true">Tous</button>
+          <button type="button" class="filter-btn" data-filter="support" aria-pressed="false">Support</button>
+          <button type="button" class="filter-btn" data-filter="cyber" aria-pressed="false">Cyber</button>
+          <button type="button" class="filter-btn" data-filter="finance" aria-pressed="false">Finance</button>
+        </div>
+        <div class="services-grid">
+          <article class="service-card" data-category="support">
+            <div>
+              <p class="card__eyebrow">Performance PC</p>
+              <h3>Diagnostic & optimisation</h3>
+              <p class="price">49 €</p>
+              <ul>
+                <li>Bilan rapide (processus, démarrage)</li>
+                <li>Nettoyage + mises à jour essentielles</li>
+                <li>Mini plan d'entretien</li>
+              </ul>
+            </div>
+            <a class="btn primary" href="mailto:contact@atechx.fr?subject=Diagnostic%20Optimisation%20PC">Je optimise mon PC</a>
+          </article>
+
+          <article class="service-card" data-category="support">
+            <div>
+              <p class="card__eyebrow">Logiciel / outil</p>
+              <h3>Installation & configuration</h3>
+              <p class="price">29 €</p>
+              <ul>
+                <li>Installation d'un outil clé</li>
+                <li>Réglages basiques + raccourcis utiles</li>
+                <li>Sauvegarde licences/clés</li>
+              </ul>
+            </div>
+            <a class="btn primary" href="mailto:contact@atechx.fr?subject=Installation%20logiciel">Je demande l'installation</a>
+          </article>
+
+          <article class="service-card" data-category="support">
+            <div>
+              <p class="card__eyebrow">Nouveau poste</p>
+              <h3>Mise en service</h3>
+              <p class="price">79 €</p>
+              <ul>
+                <li>Paramétrage système & drivers</li>
+                <li>Installation essentiels (navigateur, suite)</li>
+                <li>Transfert dossiers principaux</li>
+              </ul>
+            </div>
+            <a class="btn primary" href="mailto:contact@atechx.fr?subject=Mise%20en%20service%20PC">Je prépare mon PC</a>
+          </article>
+
+          <article class="service-card" data-category="cyber">
+            <div>
+              <p class="card__eyebrow">Hygiène cyber</p>
+              <h3>Audit sécurité express</h3>
+              <p class="price">59 €</p>
+              <ul>
+                <li>Revue mots de passe & accès</li>
+                <li>Checklist sauvegardes & mises à jour</li>
+                <li>Recommandations prioritaires</li>
+              </ul>
+            </div>
+            <a class="btn primary" href="mailto:contact@atechx.fr?subject=Audit%20securite">Je renforce ma sécurité</a>
+          </article>
+
+          <article class="service-card" data-category="finance">
+            <div>
+              <p class="card__eyebrow">Finance perso</p>
+              <h3>Session démarrage (1h)</h3>
+              <p class="price">49 €</p>
+              <ul>
+                <li>Structure budget & objectifs</li>
+                <li>Comprendre bourse & risques</li>
+                <li>Bonnes pratiques de départ</li>
+              </ul>
+            </div>
+            <a class="btn primary" href="mailto:contact@atechx.fr?subject=Session%20Finance%20Perso">Je démarre</a>
+          </article>
+
+          <article class="service-card" data-category="support">
+            <div>
+              <p class="card__eyebrow">Suivi périodique</p>
+              <h3>Sauvegardes & mises à jour</h3>
+              <p class="price">39 €</p>
+              <ul>
+                <li>Contrôle sauvegardes + espace disque</li>
+                <li>Vérification mises à jour critiques</li>
+                <li>Rapport synthétique</li>
+              </ul>
+            </div>
+            <a class="btn primary" href="mailto:contact@atechx.fr?subject=Suivi%20Sauvegardes">Je planifie un contrôle</a>
+          </article>
+        </div>
+      </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        <span id="copyright"></span>
+        <a href="https://atechx.fr/">atechx.fr</a>
+      </p>
+    </footer>
+
+    <script src="./script.js?v=202411232205" defer></script>
+  </body>
+</html>
